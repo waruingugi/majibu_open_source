@@ -1,0 +1,44 @@
+<!-- New members notification --> 
+{% load static %}
+
+    <div class="fixed-bottom">
+        <div aria-live="polite" aria-atomic="true" style="position: relative;">
+            <!-- Position it -->
+            <div style="position: absolute; bottom: 0; left: 0; margin:10px">
+    
+                <div class="toast fade" role="status" aria-live="polite" aria-atomic="true" data-delay="3000" data-animation="true" >
+                    <div class="toast-header">
+                        <img src="{% static 'assets/img/favicon.ico' %}">
+                        <strong id="name" class="ml-1 mr-4">Warui</strong>
+                        <small id="time" class="text-muted">11 mins ago</small>
+                    </div>
+                    <div class="toast-body">
+                        <small>Reserved a spot in Majibu</small>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            {% autoescape off %}
+            var json = {{ names }}
+            {% endautoescape %}
+
+            function loop(){
+                {% autoescape off %}
+                random = Math.floor(Math.random() * {{ len_names }});
+                {% endautoescape %}
+                d = json[random]
+
+                document.getElementById("name").innerHTML = d.name;
+                document.getElementById("time").innerHTML = d.time;
+                $('.toast').toast('show');
+            }
+
+            setInterval(loop, 13000);
+
+        });
+    </script>

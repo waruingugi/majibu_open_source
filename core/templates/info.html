@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}  
+    {% include 'navbar.html' %}
+
+    <section id="content-full-height" class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card mt-5" id="content-card">
+                        <div class="card-body">
+                            <h2 class="text-danger text-center">Majibu Says...</h2>
+                            <hr>
+                            <p>{{ message }}</p>
+                            <hr><a class="btn btn-light btn-block btn-lg" role="button" href="{% url 'index' %}">&lt;&lt; Go Back</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+
+{% endblock %}

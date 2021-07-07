@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majibu | {{ title }}</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belleza">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <script src="{% static 'assets/js/jquery-3.5.1.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/styles.css' %}" />
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'assets/img/favicon.ico' %}" href="assets/img/favicon.ico" type="image/x-icon">    
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Majibu - Think you've seen profits">
+    <meta name="description" content="Discover How To Earn Recurring Profits By Answering A Few Questions, and Without getting them all right!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://majibu.co.ke/">
+    <meta property="og:title" content="Majibu - Think you've seen profits?">
+    <meta property="og:description" content="Discover How To Earn Recurring Profits By Answering A Few Questions, and Without getting them all right!">
+    <meta property="og:image" content="https://majibu.co.ke/static/assets/img/og_image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://majibu.co.ke/">
+    <meta property="twitter:title" content="Majibu - Think you've seen profits?">
+    <meta property="twitter:description" content="Discover How To Earn Recurring Profits By Answering A Few Questions, and Without getting them all right!">
+    <meta property="twitter:image" content="https://majibu.co.ke/static/assets/img/og_image.png">
+
+    <script type='text/javascript'>
+        window.smartlook||(function(d) {
+            var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+            var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+            c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+            })(document);
+            smartlook('init', '6ce15f65971b55fe26a92f6b8b353e9461028933');
+        </script>
+
+   <!-- Clicky -->
+	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101279091);</script>
+	<script async src="//static.getclicky.com/js"></script>
+   <!-- End of clicky -->
+
+
+   <!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '390236038628744');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=390236038628744&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+
+</head>
+
+<body>
+
+    {% block content %}
+    <!-- body content -->
+    {% endblock %}
+
+    {% block scripts %}
+        
+    {% endblock %}
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+        
+
+</body>
+</html>

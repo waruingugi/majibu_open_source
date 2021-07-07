@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+    {% include 'navbar.html' %}   
+    <section id="content-full-height" class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card mt-5" id="content-card">
+                        <div class="card-body">
+                            <p>Enter your name and email to reserve a <strong>FREE </strong>spot in Majibu.<br></p>
+                            <hr>
+                            <form role="form" action="{% url 'reservation' %}" method="POST" autocomplete="on">
+                            {% csrf_token %}
+
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="name" value="{{ form.name.value|default_if_none:'' }}" required="" placeholder="Name" autofocus="">
+                                </div>
+                                <div class="form-group">
+                                    <small class="text-danger text-left">{{form.email.errors.as_text }}</small>
+                                    <input class="form-control email" type="email" name="email" required="" value="{{ form.email.value|default_if_none:'' }}" placeholder="example@gmail.com" autocomplete="on">
+                                <hr><button class="btn btn-primary btn-block animate__animated animate__headShake" type="submit" id="btn-preferred">YES! RESERVE MY SPOT NOW &gt;&gt;</button></div>
+                            
+                            </form>
+                            <p class="text-center"><i class="fa fa-clock-o mr-2"></i><small><span style="text-decoration: underline;">Offer closing soon...</span></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+
+    {% block scripts %}
+        <script src="{% static 'assets/js/custom_email_autocomplete.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.email-autocomplete.js' %}"></script>
+    {% endblock %}
+
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+    {% include 'navbar.html' %}
+
+    <section id="intro-section">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center py-5" id="intro-content">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <h2 id="font-size-large" class="font-weight-bold"><strong>Discover How Football Fans Are Earning Recurring Profits, One-After-Another, By Answering A Few Simple Multi-Choice Questions...</strong><br></h2>
+                        <h2 class="text-white-50">Without knowing all the right answers!<br></h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6"><a class="btn btn-primary btn-block btn-lg font-weight-bold" role="button" href="{% url 'reservation' %}" id="btn-preferred">YES, LET ME IN FOR FREE!</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content" class="py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <p><strong>Dear friend,</strong><br></p><img src="{% static 'assets/img/loser.png' %}" id="large-img-container" alt="Picture of man losing money">
+                    <p>Are you tired of losing your money to betting companies?<br></p>
+                    <p>Or agents that vanish after promising you <em>'sure fixed matches'?</em><br></p>
+                    <p>Or how about that one bet that spoils everything?<br></p><img src="{% static 'assets/img/loser.png' %}" id="small-img-container" alt="Picture of man losing money">
+                    <p>Or that team that returns barely enough profits?<br></p>
+                    <p>What if I told you that <strong>you can make twice as much profit, 3x faster - without the hassle of placing another bet?</strong><br></p>
+                    <p>And all you do is answer 10 multi-choice questions... <strong>and you DO NOT have to get them all correct!</strong><br></p><img src="{% static 'assets/img/profit.png' %}" id="profit-image-container">
+                    <p>As you'll soon see, you can get away with this using a superior algorithm called <strong>Majibu</strong> that calculates your total marks based on time and score.<br></p>
+                    <p>Then, this algorithm pairs you with another participant with a similar playing pattern as yours.<br></p>
+                    <p>So, it <strong>DOES NOT MATTER whether you are a rookie in the world of sports, or you didn't answer everything in time, or only got one question right</strong>.<br></p>
+                    <p><strong>Majibu</strong> considers all this so you don't have to worry!<br></p>
+                    <p>And even if you're not a football fan, Majibu has you covered with <strong>more categories:</strong><br></p>
+                    <ul>
+                        <li><span class="text-primary"><strong>Politics and History</strong></span>&nbsp;questions for up-to-speed people...<br></li>
+                        <li><span class="text-primary"><strong>General Knowledge</strong></span>&nbsp;questions for those who like to keep it cool...<br></li>
+                        <li><span class="text-primary"><strong>Tech. questions</strong></span>&nbsp;if you love the world of computers and machines...<br></li>
+                        <li>Heck, there's even <span class="text-primary"><strong>BIBLE questions...</strong></span></li>
+                        <li>Simply put, Majibu is for anyone who wants to generate more revenue...&nbsp;<strong>FAST<em>.</em></strong><br></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6"><a class="btn btn-primary btn-block btn-lg font-weight-bold animate__animated animate__headShake" role="button" href="{% url 'reservation' %}" id="btn-preferred">CLICK HERE AND STOP LOSING MONEY TO SCAMMERS</a></div>
+            </div>
+        </div>
+    </section>
+    <section id="content" class="bg-light py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="text-center"><span style="text-decoration: underline;">How Does This Work?</span></h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card my-4" id="card-features">
+                        <div class="card-body text-center"><img src="{% static 'assets/img/accuracy.png' %}" id="image-card">
+                            <h5 class="card-title">Surgical Precision</h5>
+                            <p class="card-text">High precision calculations to eliminate chances of draws so that you walk away with the bounty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-4" id="card-features">
+                        <div class="card-body text-center" id="mx-3"><img src="{% static 'assets/img/algorithm.png' %}" id="image-card">
+                            <h5 class="card-title">Powerful Algorithms</h5>
+                            <p class="card-text">Algorithms that produce knock-Out results, time and again, so that you receive steady profits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <p>Within this top-secret algorithm are fine-tuned components, with only one goal -<strong> to deliver you the best performance and profits 3x times faster.</strong></p>
+                    <p>Plus, Majibu <em>'borrowed'</em> a powerful pairing algrothim similar to what Instagram and Netflix use to find similar users.</p>
+                    <p>This means, that <span style="text-decoration: underline;">there is no need to spend hours cramming BIBLE verses, or learning all there is to know about football, or whatever category it is you choose...</span></p>
+                    <p>Because, even if you toiled all night and scored high marks, you'll still be paired with another genius with high marks.</p>
+                    <p>And <span style="text-decoration: underline;">if you guessed all the questions, and scored incredibly low marks... you'll be paired with another partner just like you!</span></p>
+                    <p>To this algorithm, <strong>it does not matter how much you know.</strong></p>
+                    <p>Because <strong>the more times you answer questions, Majibu becomes better at learning new ways to help you win!</strong></p>
+                    <p><em>And it does all this in minutes, NOT days. <strong>Isn't that great or what?</strong></em></p>
+                    <p>So by enrolling right now to Majibu you get to...</p>
+                    
+                    <p><i class="fa fa-check-square-o mx-2 text-primary" aria-hidden="true"></i>Take advantage of a superior algorithm that delivers no matter your level of knowledge...</p>
+                    <p><i class="fa fa-check-square-o mx-2 text-primary" aria-hidden="true"></i>And generates insights that help you grow your income.</p>
+                    <p><i class="fa fa-check-square-o mx-2 text-primary" aria-hidden="true"></i>An added bonus to test Majibu's premium packages before they are launched.</p>
+                    <p><i class="fa fa-check-square-o mx-2 text-primary" aria-hidden="true"></i>(And most importantly) Say goodbye to con-artists who swindle your money using all manner of tricks and promises.</p>
+                    <p>But don't just take my word for it... Act now to get these benefits for free!
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8"><a class="btn btn-primary btn-block btn-lg font-weight-bold" role="button" href="{% url 'reservation' %}" id="btn-preferred">DON'T WAIT! CLAIM YOUR SPOT TO TRY MAJIBU NOW</a></div>
+            </div>
+        </div>
+    </section>
+    <section id="content" class="mt-3 mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="text-center"><span style="text-decoration: underline;">AND IN A FLASH... THE OFFER WAS GONE</span></h2>
+                    <p>I would like to get everyone onboard, but that would overwhelm the system.</p>
+                    <p>That's why there's only a few slots for people to experience <span style="text-decoration: underline;">what it feels like making consistent profits in the comfort of their home using Majibu.</span></p>
+                    <p><strong>Right now, you can try it for just $0 - that's ABSOLUTELY FREE!</strong></p>
+                    <p>To reserve your spot, you just click the button below, let me know your name and email, and I will grant you instant access when Majibu is launched.</p>
+                    <p>No credit card is required, No commitment form, No enrollment fees... Nothing at all. It's that simple.</p>
+                    <p>Soon though, I'll close this FREE trial offer and you'll have to dig into your pockets just to use Majibu.</p>
+                    <p>And it won't be pennies... charges are a minimum of Kshs 2,499 every month.</p>
+                    <p><strong>Imagine leaving this opportunity and coming back later only to find it closed.</strong></p>
+                    <p>So don't make the mistake of waiting until the last minute.</p>
+                    <p>If you want to see profits in less time and less hassle, don't miss this chance and click this button now.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                <a class="btn btn-primary btn-block btn-lg font-weight-bold animate__animated animate__headShake" role="button" href="{% url 'reservation' %}" id="btn-preferred">GET IN WHILE YOU STILL CAN!</a></div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+
+    {% include 'members.html' %}
+
+{% endblock %}

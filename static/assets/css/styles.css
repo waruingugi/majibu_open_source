@@ -1,0 +1,189 @@
+#intro-section {
+  text-align:center;
+  background-color:#000839;
+  color:white;
+  background-image:url("../../assets/img/football-bg-image.png");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.navbar-brand {
+  font-family:Belleza, sans-serif;
+  font-weight:bold;
+  letter-spacing:2px;
+  font-size:24px;
+  line-height:26px;
+}
+
+@media (min-width: 992px) {
+  .font-size-large {
+    font-size:2.7rem;
+  }
+}
+
+@media (min-width:468px and max-width: 768px) {
+  #intro-heading h4 {
+    font-size:2.4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #intro-content {
+    height:80vh;
+  }
+}
+
+#btn-preferred {
+  border:2px #F01330;
+  background-color:#f0134d;
+  white-space:normal;
+}
+
+#btn-preferred:focus {
+  background-color:#D20D42;
+  box-shadow:0 0 0 .3rem rgba(210,13,66,0.6);
+}
+
+#btn-preferred:hover {
+  background-color:#D20D42;
+}
+
+.navbar-brand {
+  color:#f0134d !important;
+}
+
+body {
+  font-size:18px;
+  font-family:Montserrat, sans-serif;
+}
+
+@media (min-width: 992px) {
+  #font-size-large {
+    font-size:2.7rem;
+  }
+}
+
+#small-img-container, #large-img-container {
+  background-image:url("../../assets/img/loser.png");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+#small-img-container {
+  width:300px;
+  display:block;
+  height:250px;
+  margin:auto;
+}
+
+@media (min-width: 992px) {
+  #small-img-container {
+    display:none;
+  }
+}
+
+#large-img-container {
+  width:400px;
+  height:300px;
+  float:right;
+}
+
+@media (max-width: 990px) {
+  #large-img-container {
+    display:none;
+  }
+}
+
+#profit-image-container {
+  display:block;
+  height:250px;
+  width:70%;
+  margin:auto;
+}
+
+@media (min-width: 992px) {
+  #profit-image-container {
+    margin:10px 15px 10px 0;
+    float:left;
+    height:230px;
+    width:250px;
+  }
+}
+
+#image-card {
+  width:40%;
+  display:block;
+  margin:auto;
+  padding:10px;
+}
+
+.card-text {
+  font-size:16px;
+}
+
+#card-features {
+  transition:all .2s ease-in-out;
+  -webkit-box-shadow:0px 9px 25px -3px rgba(0,0,0,0.35);
+  -moz-box-shadow:0px 9px 25px -3px rgba(0,0,0,0.35);
+  box-shadow:0px 9px 25px -3px rgba(0,0,0,0.35);
+}
+
+#card-features:hover {
+  transform:scale(1.05);
+}
+
+#footer {
+  padding:15px 0;
+}
+
+.custom-animate-flush {
+  --animate-duration:2s;
+  --animate-delay:0.9s;
+}
+
+.animate__animated.animate__headShake, .animate__animated.animate__flash {
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+
+#content-full-height {
+  height:100vh;
+}
+
+.btn-light {
+  border:1px solid rgba(33,37,41,0.2);
+}
+
+#content-card {
+  -webkit-box-shadow:0px 9px 25px -3px rgba(0,0,0,0.35);
+  -moz-box-shadow:0px 9px 25px -3px rgba(0,0,0,0.35);
+  box-shadow:0px 9px 25px -3px rgba(0,0,0,0.35);
+  border-radius:8px;
+}
+
+#answer_correct {
+  padding:5px;
+  border-radius:5px;
+  background-color:rgba(0,123,255,0.1);
+}
+
+#answer_wrong {
+  padding:5px;
+  border-radius:5px;
+  background-color:rgba(217,83,79,0.1);
+}
+
+#results_content {
+  border-radius:5px;
+}
+
+.text-danger {
+  color:#f0134d !important;
+}
+
+.toast.fade {
+  transition: opacity 1s linear !important;
+}
